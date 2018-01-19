@@ -4,25 +4,21 @@ GEID = Global entity ID. Used for generating unique identifier strings for playe
 
 ## Installation
 
-Simply add to your `pawn.json`/`pawn.yaml`:
-
-```json
-{
-    "dependencies": ["ScavengeSurvive/LIBRARY_NAME"]
-}
-```
-
-Update your `dependencies` directory:
+Simply install to your project:
 
 ```bash
-sampctl package ensure
+sampctl package install ScavengeSurvive/geid
 ```
 
 Include in your code and begin using the library:
 
 ```pawn
-#include <LIBRARY_NAME>
+#include <geid>
 ```
+
+## Usage
+
+Call `mkgeid` to get a unique string identifier for the given ID.
 
 ## Testing
 
@@ -31,5 +27,3 @@ To test, simply run the package:
 ```bash
 sampctl package run
 ```
-
-And connect to `localhost:7777` to test.
